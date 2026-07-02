@@ -3,6 +3,7 @@ import {
   unescapeTabsAndNewLines,
   escapeBrackets,
   buildTemplate,
+  buildHtmlLink,
 } from "./util";
 import { describe, test, expect } from "vitest";
 
@@ -66,5 +67,19 @@ describe("buildTemplate", () => {
     },
   ])("build templates", ({ template, title, url, expected }) => {
     expect(buildTemplate(template, title, url)).toBe(expected);
+  });
+});
+
+describe("buildHtmlLink", () => {
+  test("builds a link for rich-text clipboard consumers", () => {
+    expect(buildHtmlLink("Google", "https://www.google.com/")).toBe(
+      '<a href="https://www.google.com/">Google</a>&nbsp;',
+    );
+  });
+
+  test("escapes HTML special characters in the title and URL", () => {
+    expect(buildHtmlLink('A < B & "quoted"', "https://example.com/?a=1&b=2")).toBe(
+      '<a href="https://example.com/?a=1&amp;b=2">A &lt; B &amp; &quot;quoted&quot;</a>&nbsp;',
+    );
   });
 });

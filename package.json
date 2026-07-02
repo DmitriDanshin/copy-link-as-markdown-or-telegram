@@ -1,9 +1,19 @@
 {
-  "name": "copy-title-and-url-as-markdown",
+  "name": "copy-link-as-markdown-or-telegram",
   "version": "2.0.2",
-  "description": "Quickly copy the title & url of current tab as Markdown style (`[title](url)`)",
   "private": true,
-  "packageManager": "pnpm@10.34.3",
+  "description": "Quickly copy the current tab's title and URL as Markdown or a clickable Telegram link",
+  "keywords": [],
+  "homepage": "https://github.com/DmitriDanshin/copy-link-as-markdown-or-telegram#readme",
+  "bugs": {
+    "url": "https://github.com/DmitriDanshin/copy-link-as-markdown-or-telegram/issues"
+  },
+  "license": "MIT",
+  "author": "Shingo Yamazaki <shingoyamazaki00@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmitriDanshin/copy-link-as-markdown-or-telegram.git"
+  },
   "scripts": {
     "dev": "wxt",
     "build": "wxt build",
@@ -23,17 +33,6 @@
     "release": "npm run lint && npm run build && standard-version",
     "release:dry-run": "standard-version --dry-run"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zaki-yama/copy-title-and-url-as-markdown.git"
-  },
-  "keywords": [],
-  "author": "Shingo Yamazaki <shingoyamazaki00@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/zaki-yama/copy-title-and-url-as-markdown/issues"
-  },
-  "homepage": "https://github.com/zaki-yama/copy-title-and-url-as-markdown#readme",
   "dependencies": {
     "@radix-ui/react-label": "^2.1.8",
     "@radix-ui/react-slot": "^1.2.4",
@@ -59,5 +58,6 @@
     "vite": "^8.0.0",
     "vitest": "4.0.18",
     "wxt": "^0.20.18"
-  }
+  },
+  "packageManager": "pnpm@10.34.3"
 }

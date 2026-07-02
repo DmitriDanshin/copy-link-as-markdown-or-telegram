@@ -1,18 +1,26 @@
-# Chrome Extension: Copy Title & Url as Markdown Style
+# Copy Link as Markdown or Telegram
 
-Quickly copy the title & url of current tab as Markdown style (`[title](url)`).
+A Chrome extension that copies the current tab's title and URL in two compatible
+clipboard formats at once:
+
+- Markdown (`[title](url)`) for text editors and developer tools.
+- A clickable rich-text link for Telegram and other compatible applications.
 
 ![screenshot](./images/screenshot.png)
 
-## Installation & Usage
+## Development
 
-Chrome Web Store: https://chrome.google.com/webstore/detail/copy-title-and-url-as-mar/fpmbiocnfbjpajgeaicmnjnnokmkehil
+```sh
+pnpm install
+pnpm build
+```
 
-日本語の説明はこちら。  
-[ページのタイトルと URL を Markdown 形式でコピーする Chrome 拡張作った - dackdive's blog](http://dackdive.hateblo.jp/entry/2015/12/27/000000)
+Load `.output/chrome-mv3` as an unpacked extension from `chrome://extensions`.
 
-## Contributing
+## Credits
 
-Thank you for taking an interest in this repository.  
-Since the source code also serves as my programming learning purpose, **I generally do not accept Pull Requests**.  
-However, I welcome issues related to feature requests and bug reports.
+This project is an unofficial fork of
+[Copy Title and Url as Markdown Style](https://github.com/zaki-yama/copy-title-and-url-as-markdown),
+originally created by [Shingo Yamazaki](https://github.com/zaki-yama).
+Many thanks to the original author for creating the extension and making its
+source code available under the MIT License.

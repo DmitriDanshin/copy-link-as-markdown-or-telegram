@@ -1,10 +1,10 @@
 {
   "appName": {
-    "message": "Copy Title and Url as Markdown Style",
+    "message": "Copy Link as Markdown or Telegram",
     "description": "The title of the application, displayed in the web store."
   },
   "appDesc": {
-    "message": "現在開いているページのタイトルと URL を Markdown 形式でコピーします。",
-    "description":"The description of the application, displayed in the web store."
+    "message": "現在のタブを Markdown 形式、または Telegram でクリック可能なリンクとしてコピーします。",
+    "description": "The description of the application, displayed in the web store."
   }
 }
